@@ -5,7 +5,7 @@ export default function TabLayout() {
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: "blue" }}>
       <Tabs.Screen
-        name="index"
+        name="screens/home/index"
         options={{
           title: "Beauty",
           tabBarIcon: ({ color }) => (
@@ -13,17 +13,9 @@ export default function TabLayout() {
           ),
         }}
       />
+
       <Tabs.Screen
-        name="search"
-        options={{
-          title: "Beauty",
-          tabBarIcon: ({ color }) => (
-            <FontAwesome size={25} name="search" color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="Beauty"
+        name="screens/profile/profile"
         options={{
           title: "Profile",
           tabBarIcon: ({ color }) => (
